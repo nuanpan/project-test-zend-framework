@@ -64,13 +64,10 @@ class TestController extends AbstractActionController
         try
         {
             $test = new Test();
-            $x = $test->FindingForX();
-            $y = $test->FindingForY();
-            $anotherX = $test->FindingForAnotherX();
             $view = $this->basic();
-            $view->x = $x;
-            $view->y = $y;
-            $view->anotherX = $anotherX;
+            $view->x = $test->FindingForX();
+            $view->y = $test->FindingForY();
+            $view->anotherX = $test->FindingForAnotherX();
             return $view;
         }
         catch( Exception $e )

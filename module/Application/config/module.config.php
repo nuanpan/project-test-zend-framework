@@ -111,7 +111,7 @@ return array(
 
             #test
             'application/test/index' => __DIR__ . '/../view/test/index.phtml',
-            'application/test/check' => __DIR__ . '/../view/test/index.phtml',
+            'application/test/view' => __DIR__ . '/../view/test/index.phtml',
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
