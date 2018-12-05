@@ -1,0 +1,11 @@
+<div class="container" style="margin-top:10px;">
+	<div class="jumbotron">
+		<h1><?=$this->translate('hello');?>, Test Controller!</h1>
+		<p>...</p>
+		<p><a class="btn btn-primary btn-lg" href="<?=$this->url('home');?><?=$this->lang;?>/test/check" role="button"><?=$this->translate('See Result');?></a></p>
+		<p><a class="btn btn-primary btn-lg" href="<?=$this->url('home');?><?=$this->lang;?>/test/" role="button"><?=$this->translate('clear');?></a></p>
+		<? if($this->x != ""){ ;?>X: <?=$this->x ;?><br><? } ?> 
+		<? if($this->y != ""){ ;?>Y: <?=$this->y ;?><br><? } ?>
+		<? if($this->anotherX != ""){ ;?>Another X: <?=$this->anotherX;?><? } ?>
+	</div>
+</div>
